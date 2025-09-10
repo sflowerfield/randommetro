@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>今日の駅はどこ？</title>
+    <title>東京メトロ駅名くじ引き</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>ランダム駅名ジェネレーター</h1>
-        <p>「ボタン」を押すと駅名が表示されます</p>
-        <p id="station-name">---</p>
-        <button id="generate-button">駅名を引く</button>
+        <h1>東京メトロ駅名くじ引き</h1>
+        <p>「ボタン」を押すとランダムな駅名が表示されます</p>
+        <div id="result-box">
+            <p id="station-name" class="result-text">---</p>
+            <p id="station-ruby" class="result-text"></p>
+            <p id="station-line" class="result-text"></p>
+        </div>
+        <button id="generate-button">駅を引く</button>
     </div>
     <script src="script.js"></script>
 </body>
